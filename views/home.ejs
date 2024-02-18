@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <div class="nav">
+        <h1>Money Manager</h1>
+        <div class="link">
+            <a href="/">Home</a><a href="/income">Income</a><a href="/expenditure">Expenditure</a>
+        </div>
+    </div>
+    <br><br>
+    <!-- <h1>Money Manager</h1> -->
+    <br><br>
+
+
+
+
+
+
+
+    <% let expSum = 0 , incSum = 0  %>
+    <% for(let income of incomeDetails) {%>
+        <% incSum+=income.amount %>
+    <% } %>
+    <% for(let exp of expenditureDetails) {%>
+        <% expSum+=exp.amount %>
+    <% } %>
+    <div class="container">
+
+        <div class="count-container">
+            <div class="total-balance">Total Balance : <%= incSum - expSum %></div>
+            <div class="bottom">
+                <a href="/income">
+                    <div class="total-income">Income Transactions</div>
+                </a>
+                <a href="/expenditure">
+                    <div class="total-expenditure">Expenditure Transactions</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

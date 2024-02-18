@@ -1,0 +1,28 @@
+input {
+  border-radius: 25px;
+  padding: 10px;
+  outline: none;
+  /* text-align: center; */
+  font-size: medium;
+}
+
+h1 {
+  text-align: center;
+}
+
+.new_form_exp {
+  /* border: 1px solid black; */
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.new_form_exp button {
+  margin: 30px 60px;
+  padding: 10px;
+  border-radius: 25px;
+  outline: none;
+  background-color: black;
+  color: white;
+}

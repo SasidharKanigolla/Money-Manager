@@ -1,0 +1,27 @@
+.nav h1 {
+  /* text-align: center; */
+  padding-left: 20px;
+  color: white;
+}
+.nav {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(18, 18, 79);
+  margin-bottom: 15px;
+}
+.link {
+  display: flex;
+}
+.link a {
+  margin-left: 10px;
+  margin-right: 15px;
+  font-size: 28px;
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  margin: 0;
+}

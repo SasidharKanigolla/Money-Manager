@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Income</title>
+    <link rel="stylesheet" href="/nav.css" />
+    <link rel="stylesheet" href="/income_new.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <h1>Money Manager</h1>
+      <div class="link">
+        <a href="/">Home</a><a href="/income">Income</a
+        ><a href="/expenditure">Expenditure</a>
+      </div>
+    </div>
+    <div class="new_form_inc">
+      <h1>Edit your income</h1>
+      <form method="post" action="/income/<%= detail._id  %>?_method=PATCH">
+        <input type="number" name="amount" value="<%= detail.amount  %>" />
+        <br />
+        <button>Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

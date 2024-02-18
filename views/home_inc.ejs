@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>income</title>
+    <link rel="stylesheet" href="income_home.css" />
+    <link rel="stylesheet" href="nav.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <h1>Money Manager</h1>
+      <div class="link">
+        <a href="/">Home</a><a href="/income">Income</a
+        ><a href="/expenditure">Expenditure</a>
+      </div>
+    </div>
+    <!-- <br> -->
+    <% let sum = 0 %> <% for(let detail of details){%> <% sum+=detail.amount %>
+    <% } %>
+    <h1>Inome Details</h1>
+    <br />
+    <div class="Total">
+      <div class="balance">
+        <p>Total income : ₹<%= sum %></p>
+      </div>
+    </div>
+    <br />
+    <% let sNo = 1 %>
+    <div class="total-transactions">
+      <% for(let detail of details){%>
+      <div class="exp">
+        <div class="sno">
+          <p><%= sNo %></p>
+          <% sNo++ %>
+        </div>
+        <div class="amount">
+          <p>₹<%=detail.amount%></p>
+        </div>
+
+        <form method="get" action="/income/edit/<%= detail._id  %>">
+          <button class="mybut">Edit</button>
+        </form>
+
+        <form method="post" action="/income/<%= detail._id  %>?_method=DELETE">
+          <button class="mybut">Delete</button>
+        </form>
+      </div>
+      <br />
+      <% } %>
+    </div>
+    <form method="get" action="/income/new">
+      <!-- <div class="but"> -->
+      <button class="new">+</button>
+      <!-- </div> -->
+    </form>
+  </body>
+</html>

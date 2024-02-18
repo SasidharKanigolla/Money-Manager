@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>new</title>
+    <link rel="stylesheet" href="/expenditure_new.css" />
+    <link rel="stylesheet" href="/nav.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <h1>Money Manager</h1>
+      <div class="link">
+        <a href="/">Home</a><a href="/income">Income</a
+        ><a href="/expenditure">Expenditure</a>
+      </div>
+    </div>
+    <div class="new_form_exp">
+      
+      <h1>Add New Transaction</h1>
+      <form method="post" action="/expenditure">
+        <input type="text" name="name" placeholder="Expense Name" /><br /><br />
+        <input type="number" name="amount" placeholder="amount" /><br /><br />
+        <input
+        type="text"
+        name="description"
+        placeholder="Description"
+        /><br /><br />
+        
+        <button>Submit</button>
+      </div>
+    </form>
+  </body>
+</html>

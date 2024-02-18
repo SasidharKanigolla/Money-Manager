@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 200px;
+}
+.count-container {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.total-balance {
+  border-bottom: 1px solid white;
+  height: 50vh;
+}
+
+.total-balance {
+  /* height: 200px ; */
+  background-color: rgb(18, 18, 79);
+  padding: 20px;
+  border-radius: 25px;
+  color: white;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom {
+  display: flex;
+  /* border-top-left-radius: 25px; */
+  border-radius: 25px;
+  background-color: rgb(18, 18, 79);
+  padding: 20px;
+  height: 100vh;
+  margin-top: 10px;
+  /* flex: 50%; */
+  align-items: center;
+  /* justify-content: center; */
+}
+.total-income {
+  /* border: 1px solid white; */
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid white;
+}
+.total-income:hover,
+.total-expenditure:hover {
+  opacity: 0.7;
+}
+a {
+  font-size: 28px;
+  text-decoration: none;
+  color: white;
+}
+.total-expenditure {
+  /* border: 1px solid white; */
+  border-left: 1px solid white;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

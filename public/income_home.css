@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 200px;
+}
+h1
+{
+    text-align: center;
+    color: rgb(23, 23, 161);
+}
+.exp{
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    background-color: rgb(176, 210, 239);
+    padding: 20px;
+    border-radius:  18px;
+    font-size: 18px;
+    margin: 0px 20px;
+    
+}
+
+.total-transactions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.amount{
+    color: green;
+    /* background-color: rgb(90, 90, 226);
+    padding: px; */
+}
+.but{
+    position: relative;
+}
+
+
+.mybut{
+    /* height: 20px; */
+    padding: 4px 10px;
+    /* width: 40px; */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: rgb(52, 52, 255);
+}
+
+
+.Total{
+    height: 200px ;
+    background-color: rgb(18, 18, 79);
+    padding: 20px;
+    /* margin: 20px; */
+    margin : 0 220px;
+    border-radius:  18px;
+    color: white;
+    font-size: 26px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.new{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    padding: 4px 10px;
+    font-size: 30px;
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+
+}

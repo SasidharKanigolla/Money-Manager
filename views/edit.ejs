@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>edit</title>
+    <link rel="stylesheet" href="/nav.css" />
+    <link rel="stylesheet" href="/expenditure_new.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <h1>Money Manager</h1>
+      <div class="link">
+        <a href="/">Home</a><a href="/income">Income</a
+        ><a href="/expenditure">Expenditure</a>
+      </div>
+    </div>
+    <div class="new_form_exp">
+      <h1>Edit your expenditure</h1>
+      <form
+        method="post"
+        action="/expenditure/edit/<%= detail._id  %>?_method=PUT"
+      >
+        <input
+          type="text"
+          name="name"
+          value="<%= detail.name  %>"
+          placeholder="Expense Name"
+        /><br /><br />
+        <input
+          type="number"
+          value="<%= detail.amount  %>"
+          name="amount"
+          placeholder="amount"
+        /><br /><br />
+        <input
+          type="text"
+          value="<%= detail.description  %>"
+          name="description"
+          placeholder=""
+        /><br /><br />
+
+        <button>Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
